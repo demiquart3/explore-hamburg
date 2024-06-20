@@ -1,0 +1,163 @@
+body {
+    font-weight: bold;
+  font-family: poppins;
+    background: url(hamburgbackground.jpg);
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+  }
+  
+  .container {
+    background: url(hamburgbackground.jpg);
+  
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(227, 227, 227, 0.1);
+    width: 600px;
+    max-width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  font-family: poppins;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    margin-right: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: white;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background-color:transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: cornflowerblue;
+  }
+  
+
+.main {
+    flex-direction:column;
+  }
+  
+  
+  
+  
+  nav{
+    position: fixed;
+    width: 600px;
+    left: 30%;
+    top: 5%;
+    bottom: 5%;
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+  
+  }
+  
+  nav a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase; 
+  font-weight: bold;
+  font-family: poppins;
+  margin-right: 25px;
+  
+  
+  }
+  
+  a {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6, 50%,
+    white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: text;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before {
+    width:100%;
+  }
+
+  .footer {
+    background: rgba(0, 0, 0, 0.353); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    margin-right: 20px;
+    margin-top: 45%;
+    position:absolute;
+    width: 1500px;
+    text-align: center;
+  }
+  
+  .footer a {
+  
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-family: poppins;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  
